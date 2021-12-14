@@ -1,6 +1,6 @@
 {
   "name": "@arco-design/web-react",
-  "version": "2.26.0",
+  "version": "2.26.1",
   "description": "Arco Design React UI Library.",
   "module": "./es/index.js",
   "main": "./lib/index.js",
@@ -45,6 +45,14 @@
     "bytedesign",
     "component"
   ],
+  "homepage": "https://arco.design",
+  "bugs": {
+    "url": "https://github.com/arco-design/arco-design/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arco-design"
+  },
   "author": "ArcoDesign Team",
   "license": "MIT",
   "peerDependencies": {
@@ -52,7 +60,7 @@
     "react-dom": ">=16"
   },
   "devDependencies": {
-    "@arco-design/arco-scripts": "^1.25.2",
+    "@arco-design/arco-scripts": "^1.25.9",
     "@storybook/addon-actions": "^6.1.11",
     "@storybook/addon-essentials": "^6.1.11",
     "@storybook/addon-links": "^6.1.11",
