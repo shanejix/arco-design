@@ -141,6 +141,9 @@ export default function Teams() {
             width: '100%',
             height: 184,
           }}
+          autoPlay={{
+            interval: 3000,
+          }}
         >
           {reviews.map((item, index) => (
             <div key={index}>{renderReviewBox(item, index, { width: '80%' })}</div>
