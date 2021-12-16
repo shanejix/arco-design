@@ -87,6 +87,7 @@ function Table<T extends unknown>(baseProps: TableProps<T>, ref: React.Ref<Table
     renderPagination,
     summary,
     rowKey,
+    resetPageOnDataChange = true,
   } = props;
 
   const prefixCls = getPrefixCls('table');
@@ -437,7 +438,9 @@ function Table<T extends unknown>(baseProps: TableProps<T>, ref: React.Ref<Table
   }, [hasFixedColumnLeft, hasFixedColumnLeft, scroll?.x, flattenColumns.length]);
 
   useUpdate(() => {
-    setCurrentPage(1);
+    if (resetPageOnDataChange) {
+      setCurrentPage(1);
+    }
   }, [data]);
 
   useUpdate(() => {

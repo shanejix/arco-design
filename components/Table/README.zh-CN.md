@@ -40,6 +40,7 @@
 |onChange|分页、排序、筛选时的回调|`(pagination: PaginationProps,sorter: SorterResult,filters: Partial<Record<keyof T, string[]>>,extra: { currentData: T[]; action: 'paginate' \| 'sort' \| 'filter' }) => void`|`-`|extra in `2.19.0`|
 |pagination|分页器设置，参考[Pagination组件](/react/components/pagination)，设置 `false` 不展示分页|`PaginationProps \| boolean`|`-`|-|
 |renderPagination|自定义分页渲染。|`(paginationNode?: ReactNode) => ReactNode`|`-`|2.11.0|
+|resetPageOnDataChange|数据变化时是否重置到第一页|`boolean`|`true`|2.27.0|
 |scroll|设置x轴或y轴的滚动。`x` 设置为 `true`，会给 table 添加 `table-layout: fixed` 以及给父元素添加 `overflow: auto`。`y` 设置为 `true`，表头和表身会分离，放在两个 table 中|`{ x?: number \| string \| boolean; y?: number \| string \| boolean }`|`-`|-|
 |rowClassName|表格行的类名|`(record: T, index: number) => string`|`-`|-|
 |rowSelection|设置表格行是否可选，选中事件等。[配置项](#rowselection)|`RowSelectionProps<T>`|`-`|-|

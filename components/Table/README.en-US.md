@@ -40,6 +40,7 @@ Used for data collection, display, analysis, and processing.
 |onChange|Callback when pagination, sorting, and filtering changes|`(pagination: PaginationProps,sorter: SorterResult,filters: Partial<Record<keyof T, string[]>>,extra: { currentData: T[]; action: 'paginate' \| 'sort' \| 'filter' }) => void`|`-`|extra in `2.19.0`|
 |pagination|Pagination settings, refer to [Pagination components](/react/components/pagination), set `false` to hide pagination|`PaginationProps \| boolean`|`-`|-|
 |renderPagination|Customized pagination render|`(paginationNode?: ReactNode) => ReactNode`|`-`|2.11.0|
+|resetPageOnDataChange|Whether to reset to the first page when the data changes|`boolean`|`true`|2.27.0|
 |scroll|Set the scroll of x-axis or y-axis. Setting `x` to `true` will add `table-layout: fixed` to the table and `overflow: auto` to the parent element.If `y` is set to `true`, the header and body will be separated and placed in two tables|`{ x?: number \| string \| boolean; y?: number \| string \| boolean }`|`-`|-|
 |rowClassName|ClassName of table row|`(record: T, index: number) => string`|`-`|-|
 |rowSelection|Set whether the table row is selectable, select event, etc. [Configuration item](#rowselection)|`RowSelectionProps<T>`|`-`|-|

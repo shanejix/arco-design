@@ -159,6 +159,13 @@ export interface TableProps<T = any> {
    */
   renderPagination?: (paginationNode?: ReactNode) => ReactNode;
   /**
+   * @zh 数据变化时是否重置到第一页
+   * @en Whether to reset to the first page when the data changes
+   * @defaultValue true
+   * @version 2.27.0
+   */
+  resetPageOnDataChange?: boolean;
+  /**
    * @zh
    * 设置x轴或y轴的滚动。`x` 设置为 `true`，会给 table 添加 `table-layout: fixed` 以及给父元素添加 `overflow: auto`。
    * `y` 设置为 `true`，表头和表身会分离，放在两个 table 中
